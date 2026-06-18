@@ -41,6 +41,16 @@ try {
   console.warn('[server] Could not load ai_coach_guidelines.md')
 }
 
+// Load prop firm cheatsheet
+let propFirmCheatsheet = ''
+const cheatsheetPath = path.join(__dirname, 'prop_firm_cheatsheet.md')
+try {
+  propFirmCheatsheet = fs.readFileSync(cheatsheetPath, 'utf-8')
+  console.log(`[server] Loaded prop firm cheatsheet (${propFirmCheatsheet.length} chars)`)
+} catch (e) {
+  console.warn('[server] Could not load prop_firm_cheatsheet.md')
+}
+
 // Static frontend (served in production)
 if (fs.existsSync(clientDistPath)) {
   console.log(`[server] Serving static frontend from: ${clientDistPath}`)
@@ -75,6 +85,37 @@ function computeStats() {
 // Health
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', service: 'propcoach-ai', version: '1.0.0' })
+})
+
+// Prop Firm Cheatsheet
+app.get('/api/prop-cheatsheet', (_req, res) => {
+  // Parse Markdown into sections for structured rendering
+  const sections: { heading: string; content: string }[] = []
+  const lines = propFirmCheatsheet.split('\n')
+  let currentHeading = 'Overview'
+  let currentContent: string[] = []
+
+  for (const line of lines) {
+    if (line.startsWith('## ') && !line.startsWith('### ')) {
+      if (currentContent.length > 0) {
+        sections.push({ heading: currentHeading, content: currentContent.join('\n') })
+        currentContent = []
+      }
+      currentHeading = line.replace('## ', '').trim()
+    } else {
+      currentContent.push(line)
+    }
+  }
+  if (currentContent.length > 0) {
+    sections.push({ heading: currentHeading, content: currentContent.join('\n') })
+  }
+
+  res.json({
+    raw: propFirmCheatsheet,
+    sections,
+    totalChars: propFirmCheatsheet.length,
+    loaded: propFirmCheatsheet.length > 0,
+  })
 })
 
 // Chat / AI Coaching — powered by ai_coach_guidelines.md

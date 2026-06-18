@@ -1,0 +1,110 @@
+[
+  {
+    "id": "trade-001",
+    "asset": "EURUSD",
+    "type": "Long",
+    "date": "2026-06-15T08:30:00Z",
+    "timeframe": "5m",
+    "phase": "Phase 1: SMC/ICT Foundations",
+    "status": "Passed",
+    "traderNotes": "Price swept the Asia Session Low (Sell-side Liquidity) right after the London Open. Dropped to the 5m chart and waited for a Market Structure Shift (MSS). Once price broke and closed above the minor lower high with a displacement candle, I set a limit order at the 5m Fair Value Gap in the Discount zone.",
+    "chartDescription": "The 15m chart shows a clear sweep of equal lows at 1.08250. On the 5m chart, an aggressive bullish candle closed above the swing high of 1.08320 (validating MSS). A prominent Fair Value Gap spanned from 1.08280 to 1.08310. Entry was triggered at 1.08300 with stop loss placed at 1.08220.",
+    "riskMetrics": {
+      "stopLoss": 8.0,
+      "takeProfit": 24.0,
+      "positionSize": "1.5 lots",
+      "riskRewardRatio": "1:3"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: A**\n\n---\n\n### **Technical Confluences Identified:**\n* **Valid Liquidity Sweep**: Excellent identification of the Asia Session Low / Sell-side Liquidity (SSL) pool sweep at 1.08250 prior to execution.\n* **Clear Displacement and MSS**: The 5-minute candle body successfully closed above the swing high at 1.08320, confirming a valid shift in institutional order flow.\n* **Value Filtering**: Your limit entry at 1.08300 was perfectly placed in the **Discount Zone** (below the 50% equilibrium level of the structural leg).\n* **Imbalance Mitigation**: Pure execution at the 5m Fair Value Gap (FVG) re-test.\n\n### **Structural Errors Spotted:**\n* **None**: This is a textbook Phase 1 Smart Money execution. The stop-loss was placed safely below the structural sweep low, which is mathematically correct.\n\n### **Psychological & Behavioral Check-In:**\n* **Outstanding Discipline**: You demonstrated patience by waiting for the lower-timeframe structural validation rather than rushing into the liquidity sweep. You completely accepted the risk and executed your plan with cold discipline. This is how funded accounts are protected. Keep this exact mindset!"
+  },
+  {
+    "id": "trade-002",
+    "asset": "NQ1!",
+    "type": "Short",
+    "date": "2026-06-15T14:15:00Z",
+    "timeframe": "1m",
+    "phase": "Phase 2: Risk Management & Trade Log Integration",
+    "status": "Passed",
+    "traderNotes": "Executed a New York AM Silver Bullet trade. Price swept the New York Session Opening High at 10:05 AM EST. Dropped to the 1m chart and identified a sharp displacement down-move. Entered at the 1m FVG with a stop loss at the sweep high. Targeted the New York PM Session Low.",
+    "chartDescription": "On the 5m chart, NQ swept Buy-side Liquidity (BSL) at 19,850. On the 1m chart, a bearish displacement candle broke below the swing low of 19,835 (MSS). A 1m FVG formed between 19,842 (Candle 1 high) and 19,838 (Candle 3 low). Entry was triggered at 19,840. Stop-loss was at 19,853.",
+    "riskMetrics": {
+      "stopLoss": 13.0,
+      "takeProfit": 39.0,
+      "positionSize": "2 contracts",
+      "riskRewardRatio": "1:3"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: A-**\n\n---\n\n### **Technical Confluences Identified:**\n* **Silver Bullet Timing**: Trade was executed inside the strict **New York AM Session window** (10:00 AM - 11:00 AM EST), ensuring maximum algorithmic volatility.\n* **1m MSS and FVG**: Clean drop down to the 1-minute chart. The displacement move was highly impulsive, leaving a well-defined FVG.\n* **Premium Positioning**: Entry occurred in Premium pricing relative to the local 1m dealing range.\n\n### **Structural Errors Spotted:**\n* **Slight Aggression on Stop-Loss**: The stop loss at 19,853 was mathematically sound (3 points above the sweep high), but on high-volatility assets like NQ, a 13-point stop leaves very little room for local slippage. \n\n### **Psychological & Behavioral Check-In:**\n* **High Sizing Warning**: While the technical setup is excellent, trading 2 Mini contracts on a $50k account with a 13-point stop represents exactly **$520 of risk** (slightly over our standard **1% risk ceiling**). You passed this time, but scaling down to Micro contracts (MNQ) is highly recommended to protect your prop firm's daily drawdown parameters. Control the greed!"
+  },
+  {
+    "id": "trade-003",
+    "asset": "EURUSD",
+    "type": "Long",
+    "date": "2026-06-16T11:45:00Z",
+    "timeframe": "15m",
+    "phase": "Phase 1: SMC/ICT Foundations",
+    "status": "Failed",
+    "traderNotes": "EURUSD was trending very strongly upwards. I saw price breaking above equal highs, and I got nervous that I was missing a massive breakout. I immediately entered a market buy order at the high to ride the trend.",
+    "chartDescription": "The chart shows EURUSD trading at the very top of a Premium range, extending past several retail resistance levels at 1.08950. No Market Structure Shift or FVG existed to support this buy. Immediately after entering, price reversed aggressively downwards, sweeping the highs and stopping me out.",
+    "riskMetrics": {
+      "stopLoss": 15.0,
+      "takeProfit": 10.0,
+      "positionSize": "3.0 lots",
+      "riskRewardRatio": "1:0.67"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: F**\n\n---\n\n### **Technical Confluences Identified:**\n* **None**: This trade has zero technical alignment with institutional SMC/ICT frameworks.\n\n### **Structural Errors Spotted:**\n* **Buying in Premium / High-Impact Zone**: You purchased the asset at extreme **Premium pricing** directly at retail resistance. This is a primary institutional extraction zone.\n* **Chasing Breakouts**: Entering a market order above 'equal highs' means you were the **Buy-side Liquidity** that institutions used to fill their large short orders.\n* **No MSS / No Displacement**: There was absolutely no structural confirmation or retracement entry catalyst present. You traded a naked impulse move.\n* **Extremely Poor Risk/Reward**: Your R:R was 1:0.67 (risking 15 pips to gain only 10). This represents negative expectancy over time.\n\n### **Psychological & Behavioral Check-In:**\n* **FOMO Hijack detected**: Your notes explicitly state you felt 'nervous' about missing a trend. This is classic **FOMO (Fear Of Missing Out)**. You let emotion make your decision instead of your rulebook. Missing a trade costs $0; chasing a missed trade cost you 3.0 lots. You must enforce your pre-trade checklist strictly before taking another trade!"
+  },
+  {
+    "id": "trade-004",
+    "asset": "ES1!",
+    "type": "Short",
+    "date": "2026-06-16T15:30:00Z",
+    "timeframe": "15m",
+    "phase": "Phase 3: Prop-Firm Rules & Evaluation Prep",
+    "status": "Drawdown Warning",
+    "traderNotes": "Took a short trade on ES Futures off a 15m Bearish Order Block. The setup was highly accurate, and the trade immediately went in my favor by +12 points ($600 profit). I was greedy and wanted a larger payout, so I did not lock in break-even or take partials. Price reversed aggressively and hit my full stop loss.",
+    "chartDescription": "The 15m chart shows a valid rejection off a Bearish Order Block at 5,420. Price dropped to 5,408 before a sudden high-volume buying surge reversed the market, pushing price through the swing high of 5,425 and triggering my stop loss.",
+    "riskMetrics": {
+      "stopLoss": 8.0,
+      "takeProfit": 24.0,
+      "positionSize": "2 contracts",
+      "riskRewardRatio": "1:3"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: C**\n\n---\n\n### **Technical Confluences Identified:**\n* **Valid Order Block Rejection**: The entry itself was highly accurate, reacting off a high-probability 15m Bearish Order Block.\n* **Value Zone**: Entry occurred at a deep Premium level relative to the dealing range.\n\n### **Structural & Execution Errors Spotted:**\n* **Poor Position Management**: Letting a +12 point move reverse completely into a full loss represents a failure in execution strategy.\n\n### **Psychological & Behavioral Check-In:**\n* **Drawdown Trap (Trailing Drawdown Hazard)**: Because you were trading under strict **Futures Prop-Firm (Apex) rules**, this trade represents a severe operational failure. The trailing drawdown mechanism trails your **highest peak equity** (unrealized profit). When your trade hit +$600, your trailing drawdown limit shifted up by $600. By letting the trade reverse to a full loss (-$800), you did not just lose $800; you actually destroyed **$1,400 of drawdown room** on your evaluation account! \n* **Action Plan**: When trading under trailing drawdown constraints, you must secure partial profits or adjust stops to break-even once a trade expands past a 1:1 or 1.5:1 R:R. Protect your capital over your ego!"
+  },
+  {
+    "id": "trade-005",
+    "asset": "GBPUSD",
+    "type": "Long",
+    "date": "2026-06-16T12:29:00Z",
+    "timeframe": "1m",
+    "phase": "Phase 4: Advanced Live Simulation & Psychology",
+    "status": "Failed",
+    "traderNotes": "I had just lost my previous trade on EURUSD and felt furious. I opened GBPUSD on the 1m chart, saw a green candle, and entered a massive 5.0 lot long position to instantly recoup my losses. This was exactly 1 minute before the High-Impact CPI News Release. The market spiked downwards and blew my account in 15 seconds.",
+    "chartDescription": "The 1m chart shows extreme high-volatility wicks forming due to the CPI news release. The market swept both sides of the range aggressively. No logical structure was present. I entered at 1.26850 and was stopped out at 1.26550.",
+    "riskMetrics": {
+      "stopLoss": 30.0,
+      "takeProfit": 15.0,
+      "positionSize": "5.0 lots",
+      "riskRewardRatio": "1:0.5"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: F**\n\n---\n\n### **Technical Confluences Identified:**\n* **None**: This was a complete emotional gamble.\n\n### **Structural & Behavioral Errors Spotted:**\n* **Severe Revenge Trading**: You entered a trade immediately after a loss with double the size. This represents a total psychological hijack and complete neglect of the **'Three Strikes' / Stop-Trade rule**.\n* **High-Impact News Breach**: Entering a trade 1 minute before CPI news violates Phase 3 prop-firm news restrictions. High-impact news causes slippage and spread widening, making stop-losses completely ineffective.\n* **Excessive Sizing**: A 5.0 lot size with a 30-pip stop represents **$1,500 of risk**—completely destroying your risk parameters.\n\n### **Psychological & Behavioral Check-In:**\n* **Emergency Mental Red Alert**: You were completely controlled by anger and greed, leading to a catastrophic account breach. Your trading platform must remain closed for the next **24 hours**. You must disconnect physically from the market. Take a walk, review your Phase 4 guardrails, and do not buy another evaluation until you can demonstrate the discipline to close the laptop after a single loss. This is a critical lesson—use it to rebuild."
+  },
+  {
+    "id": "trade-006",
+    "asset": "AUDUSD",
+    "type": "Long",
+    "date": "2026-06-16T14:45:00Z",
+    "timeframe": "15m",
+    "phase": "Phase 2: Risk Management & Trade Log Integration",
+    "status": "Pending Review",
+    "traderNotes": "Waiting for a pullback on AUDUSD. Drew the Fibonacci tool from the swing low to the swing high of the 15m structural break. Price pulled back exactly into the 70.5% Optimal Trade Entry (OTE) zone, mitigating a bullish order block. I placed a limit long order at 0.66150.",
+    "chartDescription": "The 15m chart shows a clear swing low at 0.65800 and swing high at 0.66500. The OTE 62%-79% zone rests between 0.66060 and 0.66260. A bullish OB exists at 0.66120. Entry occurred at 0.66150 with a stop loss just past the 1.0 fib level at 0.65750.",
+    "riskMetrics": {
+      "stopLoss": 10.0,
+      "takeProfit": 25.0,
+      "positionSize": "1.2 lots",
+      "riskRewardRatio": "1:2.5"
+    },
+    "aiFeedback": "# PropCoach AI — Trade Audit Report\n\n### **Visual Grade: B+**\n\n---\n\n### **Technical Confluences Identified:**\n* **OTE Zone Entry**: Excellent usage of the Fibonacci tool. Your entry at 0.66150 fell perfectly inside the **70.5% Optimal Trade Entry (OTE)** sweet spot.\n* **Order Block Confluence**: The OTE zone overlapped beautifully with a pre-existing 15m Bullish Order Block.\n* **Discount Positioning**: Trade was successfully executed in deep Discount territory, buying at wholesale pricing.\n\n### **Structural Errors Spotted:**\n* **Minor Inefficiency**: The entry candle had a slightly wide spread, meaning you experienced minor slippage. Placing your limit order slightly higher at the 62% level could have guaranteed a smoother fill, though your current placement maximized the R:R.\n\n### **Psychological & Behavioral Check-In:**\n* **Excellent Structural Patience**: You did not chase the upward move. You patiently waited for price to return to your designated high-probability zone (OTE + OB). Risk was kept to a very conservative **0.8% of account balance**, showing professional longevity. Highly disciplined execution!"
+  }
+]
